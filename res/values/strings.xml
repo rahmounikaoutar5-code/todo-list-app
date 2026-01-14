@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Todo List Pro</string>
+    <string name="welcome_message">Organisez votre vie, une tâche à la fois</string>
+    <string name="get_started">Commencer l\'aventure</string>
+    <string name="hello">Bonjour</string>
+    <string name="today_tasks">Tâches aujourd\'hui</string>
+    <string name="all_tasks">Toutes</string>
+    <string name="important_tasks">Importantes</string>
+    <string name="completed_tasks">Terminées</string>
+    <string name="add_task">Ajouter une tâche</string>
+    <string name="task_title">Titre</string>
+    <string name="task_description">Description</string>
+    <string name="due_date">Date d\'échéance</string>
+    <string name="priority">Priorité</string>
+    <string name="save">Sauvegarder</string>
+    <string name="cancel">Annuler</string>
+    <string name="delete">Supprimer</string>
+    <string name="edit">Modifier</string>
+    <string name="complete">Terminer</string>
+    <string name="no_tasks">Aucune tâche pour le moment</string>
+    <string name="add_first_task">Ajoutez votre première tâche!</string>
+</resources>
