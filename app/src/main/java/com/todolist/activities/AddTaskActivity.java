@@ -170,4 +170,40 @@ public class AddTaskActivity extends AppCompatActivity {
         // Sauvegarder dans la base de données
         long taskId = dbHelper.addTask(task);
         
-        if (taskId != -1)
+        if (taskId != -1) {
+            // Succès
+            Snackbar.make(findViewById(android.R.id.content), 
+                    "Tâche ajoutée avec succès!", Snackbar.LENGTH_SHORT).show();
+            
+            // Retourner le résultat
+            setResult(RESULT_OK);
+            
+            // Petite animation avant de fermer
+            btnSave.animate()
+                    .scaleX(0.95f)
+                    .scaleY(0.95f)
+                    .setDuration(100)
+                    .withEndAction(() -> {
+                        btnSave.animate()
+                                .scaleX(1f)
+                                .scaleY(1f)
+                                .setDuration(100)
+                                .withEndAction(() -> finish())
+                                .start();
+                    })
+                    .start();
+            
+            overridePendingTransition(R.anim.stay, R.anim.slide_down);
+        } else {
+            // Erreur
+            Snackbar.make(findViewById(android.R.id.content), 
+                    "Erreur lors de l'ajout", Snackbar.LENGTH_LONG).show();
+        }
+    }
+    
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.stay, R.anim.slide_down);
+    }
+}
