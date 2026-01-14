@@ -34,13 +34,6 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.3.2'
     implementation 'androidx.cardview:cardview:1.0.0'
     
-    // Lottie pour les animations
+    // Lottie pour animations
     implementation 'com.airbnb.android:lottie:6.1.0'
-    
-    // Switch Icon
-    implementation 'com.github.zagum:Android-SwitchIcon:1.4.0'
-    
-    // Room Database (optionnel pour plus tard)
-    implementation 'androidx.room:room-runtime:2.6.0'
-    annotationProcessor 'androidx.room:room-compiler:2.6.0'
 }
